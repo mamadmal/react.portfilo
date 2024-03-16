@@ -1,4 +1,4 @@
-
+import { ResumeSlider } from "./ResumeSlider/ResumeSlider";
 
 function Home (){
 
@@ -14,38 +14,10 @@ function Home (){
     <div class="flex justify-center">
         <hr class="w-5/6"/>
     </div>
-    <section class="flex justify-center">
-        <div dir="ltr" class="swiper md:w-4/5 h-fit m-7 shadow-lg border border-slate-500 border-b-0 rounded-lg">
-            {/* <!-- Additional required wrapper --> */}
-            <div class="swiper-wrapper">
-              {/* <!-- Slides --> */}
-            <div class="swiper-slide ">
-                <img src="./images/masiha.png" class="object-cover" />
-                <a href="https://masihaacademy.ir/" target="_blank">
-                <div class="text-[#1F4172] txt-shadoww text-center absolute top-1/2 md:top-[60%] left-1/2 translate-x-[-50%] center-divMain p-1 md:p-3 md:text-4xl text-sm md:hover:scale-125 cursor-pointer ease-in duration-300">
-                    <h1 class="font-bold">آکادمی مسیحا</h1>
-                    <span class="md:text-xl">سایت مشاوره تحصیلی و اتنخاب رشته مسیحا</span>
-                </div>
-                </a>
-            </div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              
-            </div>
-          
-            {/* <!-- If we need navigation buttons --> */}
-            <div class="opacity-[0.1] md:opacity-[1] swiper-button-prevv h-full absolute z-[999999999999999999999] flex items-center top-[0] p-7 pl-3 text-white btn-swipper">
-                <span class="material-symbols-outlined border border-white rounded-full p-2">west</span>
-            </div>
 
-            <div class="opacity-[0.1] md:opacity-[1] swiper-button-nextt h-full absolute z-[999999999999999999999] flex items-center top-[0] right-0 p-7 pl-3 text-white btn-swipper">
-                <span class="material-symbols-outlined border border-white rounded-full p-2">east</span>
-            </div>
-          
-            {/* <!-- If we need scrollbar --> */}
-            <div class="swiper-scrollbar"></div>
-          </div>
-    </section>
+
+    
+    <ResumeSlider />
 
 
 
