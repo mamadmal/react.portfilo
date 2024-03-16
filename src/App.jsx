@@ -2,6 +2,8 @@ import './App.css'
 import {BrowserRouter as Router , Routes , Route } from "react-router-dom"
 
 import Nav from './components/Nav'
+import Footer from './components/Footer'
+import Home from './components/Home'
 
 
 function App() {
@@ -12,10 +14,10 @@ function App() {
     <Router>
       <Nav />
       <Routes>
-        <Route path="/"  />
+        <Route path="/" element={<Home />}  />
         <Route path="*" element={<div>Not Found</div>} />
       </Routes>
- 
+      <Footer />
     </Router> 
    
   )
