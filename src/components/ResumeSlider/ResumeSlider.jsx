@@ -7,6 +7,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+
+import masihaImage from '../../assets/masiha.png'
 export const ResumeSlider = ()=>{
 
     return(
@@ -17,13 +19,21 @@ export const ResumeSlider = ()=>{
       spaceBetween={50}
       slidesPerView={1}
       navigation
+      height={400}
+      
+      autoplay={{
+        "delay": 2500,
+        "disableOnInteraction": false
+      }}
       
       scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
+
+      
     >
       <SwiperSlide>
-                <img src="./images/masiha.png" class="object-cover" />
+                <img src={masihaImage} class="object-cover" />
                 <a href="https://masihaacademy.ir/" target="_blank">
                 <div class="text-[#1F4172] txt-shadoww text-center absolute top-1/2 md:top-[60%] left-1/2 translate-x-[-50%] center-divMain p-1 md:p-3 md:text-4xl text-sm md:hover:scale-125 cursor-pointer ease-in duration-300">
                     <h1 class="font-bold">آکادمی مسیحا</h1>

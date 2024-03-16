@@ -4,7 +4,7 @@ function Footer() {
 
     return (
         <footer>
-            <footer className="flex md:flex-row flex-col items-center text-4xl m-4 p-3 justify-center">
+            <footer className="flex md:flex-row flex-col items-center text-2xl m-4 p-3 justify-center">
        
        <a href="#head-d" className="md:mx-4 my-4"><h1>برو بالا</h1></a>
        <a href="#mian-sec" className="md:mx-4 my-4"><h1>پروژه ها</h1></a>

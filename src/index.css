@@ -16,12 +16,11 @@ body {
   background-color: #132043;
   color: #F1B4BB;
   direction: rtl;
+  font-weight: bolder;
 
 }
 
-.main-sectoion{
-background: url('./images/svg-bg.svg');
-}
+
 .center-divMain{
 /* From https://css.glass */
 background: rgba(255, 255, 255, 0.2);
@@ -35,9 +34,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .txt-shadoww{
 text-shadow: 5px 3px 12px #CECECE;
 }
-.swiper {
-height: 300px;
-}
+
 .btn-swipper:hover{
 opacity: 0.4;
 background: rgb(255,255,255);
