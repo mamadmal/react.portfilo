@@ -33,10 +33,10 @@ function Home (){
         </div>
 
         <div class="md:flex flex-wrap justify-center mx-3 md:mx-10 border border-slate-500 rounded-lg">
-            <div class="md:w-[525px] mt-6 md:mx-6">
+            <div class="md:w-[525px] mt-6 md:mx-6 cursor-pointer">
                 <img src="./images/portfilo.png" alt="" srcset="" class="rounded-lg border border-slate-500  " />
                 <div class="center-divMain text-2xl p-2 w-fit -m-4 hover:scale-125 ease-in duration-300" >
-                    <h1>سایت پورتفیلو: tailwind, swipper, JS</h1>
+                    <h1>سایت پورتفیلو: tailwind, swipper, React</h1>
                 </div>
             </div>
 
@@ -68,7 +68,7 @@ function Home (){
     </section>
 
 
-    <section class="mt-9 flex flex-col items-center md:flex-row md:justify-end md:items-start">
+    <section id="aboutme" class="mt-9 flex flex-col items-center md:flex-row md:justify-end md:items-start">
         <div class="md:text-xl md:mt-2 md:absolute md:right-[2%]  text-[#132043] bg-[#F1B4BB] mb-3 border border-slate-500 rounded-lg mr-4 p-2 text-4xl w-fit ">
             <h1>درباره من</h1>
         </div>

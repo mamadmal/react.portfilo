@@ -10,6 +10,7 @@ import 'swiper/css/scrollbar';
 
 import masihaImage from '../../assets/masiha.png'
 import sandogh from '../../assets/sandogh.jpg'
+
 export const ResumeSlider = ()=>{
 
     return(
