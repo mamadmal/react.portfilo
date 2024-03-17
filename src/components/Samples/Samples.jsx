@@ -1,8 +1,29 @@
+import { Link } from "react-router-dom";
 
 
 export const Samples = ()=>{
 
-    const sampleArrays = ["سایت پورتفیلو: tailwind, swipper, React", "محاسبه pH", "مثال لیست", "مثال"]
+    const sampleArrays = [
+        
+        {
+            name : "سایت پورتفیلو: tailwind, swipper, React",
+            link : "/"
+        },
+        {
+            name : "محاسبه pH",
+            link : "/ph"
+        },
+        {
+            name : "مثال",
+            link : "/"
+        },
+        {
+            name : "مثال",
+            link : "/"
+        }
+        
+    
+    ]
 
     
     return (
@@ -14,12 +35,18 @@ export const Samples = ()=>{
         <div class="md:flex flex-wrap justify-center mx-3 md:mx-10 border border-slate-500 rounded-lg">
 
                     {
-                        sampleArrays.map((samp)=>{
+                        sampleArrays.map((samp, index)=>{
                             return(
                                 <div class="md:w-[525px] mt-6 md:mx-6 cursor-pointer">
                                     <div  alt="" srcset="" class="rounded-lg border border-slate-500" ></div>
                                         <div class="center-divMain text-2xl p-2 w-fit -m-4 hover:scale-125 ease-in duration-300" >
-                                            <h1>{samp}</h1>
+                                            
+                                            <Link to={samp.link} key={index}>
+                                                <h1>{samp.name}</h1> 
+                                            </Link>
+                                               
+                                            
+                                            
                 
                 </div>
             </div>
