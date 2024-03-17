@@ -1,21 +1,31 @@
 import { useState } from "react";
+import { useRef } from "react";
+
 
 function Nav() {
 
   const [menue, setMenue] = useState('menu')
 
-  
+  const ref = useRef()
+  const clickRef = ()=>{
+    ref.current.style.display = "flex"
+  }
+  const clickRefClose = ()=>{
+    ref.current.style.display = "none"
+  }
 
 
   const menueClick = ()=>{
 
     if (menue === 'menu') {
       setMenue('close');
+      clickRef();
       
 
     } else {
       setMenue('menu');
-      
+      clickRefClose();
+ 
     };
   }
 
@@ -32,11 +42,12 @@ function Nav() {
             {menue}
         </button>
 
-     <ul className="z-[90000] text-2xl rounded-lg md:rounded-0 bg-[#F1B4BB] w-full md:bg-[#13204326] md:shadow-lg md:text-2xl p-3 pb-4 text-[#FDF0F0] absolute hidden md:static md:block md:flex flex">
+
+     <ul ref={ref} className=" z-[90000] text-2xl rounded-lg md:rounded-0 bg-[#F1B4BB] w-full md:bg-[#13204326] md:shadow-lg md:text-2xl p-3 pb-4 text-[#FDF0F0] absolute hidden md:static md:block md:flex flex">
             <li className="md:mx-7 p-2 "><a href="/">خانه</a></li>
             <li className="md:mx-5 md:border-0 p-2"><a href="/">پروژه ها</a></li>
             <li className="md:mx-5 md:border-0 p-2 "><a href="/">درباره من</a></li>
-        </ul>
+      </ul>
         
     
     </header>
