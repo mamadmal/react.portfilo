@@ -9,6 +9,7 @@ import 'swiper/css/scrollbar';
 
 
 import masihaImage from '../../assets/masiha.png'
+import sandogh from '../../assets/sandogh.jpg'
 export const ResumeSlider = ()=>{
 
     return(
@@ -18,22 +19,20 @@ export const ResumeSlider = ()=>{
       modules={[Navigation, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}
+      
       navigation
-      height={400}
+      height={300}
       
-      autoplay={{
-        "delay": 2500,
-        "disableOnInteraction": false
-      }}
-      
+      autoplay
       scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+      
 
       
     >
+
+
       <SwiperSlide>
-                <img src={masihaImage} class="object-cover" />
+                <img src={masihaImage} className="object-cover" />
                 <a href="https://masihaacademy.ir/" target="_blank">
                 <div class="text-[#1F4172] txt-shadoww text-center absolute top-1/2 md:top-[60%] left-1/2 translate-x-[-50%] center-divMain p-1 md:p-3 md:text-4xl text-sm md:hover:scale-125 cursor-pointer ease-in duration-300">
                     <h1 class="font-bold">آکادمی مسیحا</h1>
@@ -43,7 +42,16 @@ export const ResumeSlider = ()=>{
       </SwiperSlide>
 
 
-      <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>
+              <img src={sandogh} className="object-cover" />
+                <a href="https://dakhl-muhammad.liara.run/" target="_blank">
+                <div class="text-[#1F4172] txt-shadoww text-center absolute top-1/2 md:top-[60%] left-1/2 translate-x-[-50%] center-divMain p-1 md:p-3 md:text-4xl text-sm md:hover:scale-125 cursor-pointer ease-in duration-300">
+                    <h1 class="font-bold">صندوق</h1>
+                    <span class="md:text-xl">سایت حسابداری اجراشده در شبکه خصوصی</span>
+                </div>
+                </a>
+      </SwiperSlide>
+
       <SwiperSlide>Slide 3</SwiperSlide>
       <SwiperSlide>Slide 4</SwiperSlide>
      
