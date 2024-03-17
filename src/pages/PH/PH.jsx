@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -49,6 +50,13 @@ const calculatepka = ()=>{
             </label>
 
             </div>
+
+
+            
+                <a href='/'>
+                   <button className='m-3 font-extrabold text-2xl'>Home</button>
+                </a>
+            
 
         </div>
     )
