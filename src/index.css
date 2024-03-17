@@ -54,6 +54,8 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 5
   color: #F1B4BB;
   padding: 40px;
   border-radius: 50%;
+  width: 20px;
+  height: 20px;
   
 }
 .swiper-button-prev:hover, .swiper-button-next:hover{

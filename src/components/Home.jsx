@@ -12,7 +12,7 @@ function Home (){
             }}
             >
         <div class=" md:w-1/2 border border-slate-500 rounded-lg text-center p-4 center-divMain">
-            <h1 class="text-3xl font-bold mb-4 ">حاج آقا خوش آمدید!</h1>
+            <h1 class="text-3xl font-bold mb-4 "> خوش آمدید!</h1>
             <span>مثالی از پروژه های اجرا شده را در زیر میتوانید ببینید.</span>
         </div>
     </section>
