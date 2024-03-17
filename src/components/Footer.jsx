@@ -16,7 +16,8 @@ function Footer() {
    </div>
 
    <footer className="flex justify-center m-3">
-       @ اجرا گیت هاب
+   <iframe src="https://ghbtns.com/github-btn.html?user=mamadmal&type=follow&count=true&size=small" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+
    </footer>
         </footer>
     )
