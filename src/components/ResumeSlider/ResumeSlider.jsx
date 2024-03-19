@@ -18,12 +18,14 @@ export const ResumeSlider = ()=>{
     {
       title : "آکادمی مسیحا",
       desc : "سایت مشاوره تحصیلی و اتنخاب رشته مسیحا",
-      img : masihaImage
+      img : masihaImage,
+      link: "https://masihaacademy.ir/"
     },
     {
       title : "صندوق",
       desc : "سایت حسابداری اجراشده در شبکه خصوصی",
-      img : sandogh
+      img : sandogh,
+      link: "https://dakhl-muhammad.liara.run/"
     },
 
   ]
@@ -33,7 +35,7 @@ export const ResumeSlider = ()=>{
     
     <SwiperSlide  key={index}>
       <img src={slide.img} className="object-cover" />
-      <a href="https://masihaacademy.ir/" target="_blank">
+      <a href={slide.link} target="_blank">
         <div class="text-[#1F4172] txt-shadoww text-center absolute top-1/2 md:top-[60%] left-1/2 translate-x-[-50%] center-divMain p-1 md:p-3 md:text-4xl text-sm md:hover:scale-125 cursor-pointer ease-in duration-300">
             <h1 class="font-bold"> {slide.title}</h1>
             <span class="md:text-xl">{slide.desc}</span>

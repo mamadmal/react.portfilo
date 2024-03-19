@@ -20,16 +20,10 @@ function Home (){
         <hr class="w-5/6"/>
     </div>
 
-
     
     <ResumeSlider />
 
     <Samples />
-
-
-
-
-    
 
 
     <section id="aboutme" class="mt-9 flex flex-col items-center md:flex-row md:justify-end md:items-start">

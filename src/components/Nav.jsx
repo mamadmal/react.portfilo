@@ -31,8 +31,8 @@ function Nav() {
 
 
   return (
-    <nav className="">
-    <header id="head-d" className="main-sectoion flex justify-center m-2 text-3xl text-[#F1B4BB] md:text-[#1F4172] md:absolute md:m-1 md:left-4">
+    <nav className="absolute w-full" id="head-d">
+    <header  className="main-sectoion flex justify-center m-2 text-3xl text-[#F1B4BB] md:text-[#1F4172] md:absolute md:m-1 md:left-4">
         <h1 className="txt-shadoww md:border-0 border-b-4 border-slate-500 p-5 md:p-0 font-bold md:mt-2 md:text-slate-200 cursor-pointer"> پورتفیلو</h1>
     </header>
 
@@ -45,7 +45,7 @@ function Nav() {
 
      <ul ref={ref} className=" z-[90000] text-2xl rounded-lg md:rounded-0 bg-[#F1B4BB] w-full md:bg-[#13204326] md:shadow-lg md:text-2xl p-3 pb-4 text-[#FDF0F0] absolute hidden md:static md:block md:flex flex">
             <li className="md:mx-7 p-2 "><a href="/">خانه</a></li>
-            <li className="md:mx-5 md:border-0 p-2"><a href="/">پروژه ها</a></li>
+            <li className="md:mx-5 md:border-0 p-2"><a>پروژه ها</a></li>
             <li className="md:mx-5 md:border-0 p-2 "><a href="#aboutme">درباره من</a></li>
       </ul>
         
