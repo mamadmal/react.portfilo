@@ -7,6 +7,7 @@ import Home from './components/Home'
 import PH from './pages/PH/PH'
 import { useState } from 'react'
 import TestApi  from './pages/TestApi.jsx/TestApi'
+import { OnlineCheck } from './components/OnlineCheck'
 
 
 function App() {
@@ -21,9 +22,10 @@ function App() {
 {   showNav &&
          <Nav /> 
    } 
-      
+      <OnlineCheck />
 
       <Routes>
+        
        
         <Route path="/" element={<Home />}  />
         <Route path="/test" element={<TestApi />}  />

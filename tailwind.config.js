@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    colors:{
+      'pink' : '#F1B4BB',
+      'blue' : '#1F4172',
+    }
   },
   plugins: [],
 }
