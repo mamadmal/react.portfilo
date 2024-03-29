@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import PH from './pages/PH/PH'
 import { useState } from 'react'
+import TestApi  from './pages/TestApi.jsx/TestApi'
 
 
 function App() {
@@ -23,8 +24,11 @@ function App() {
       
 
       <Routes>
+       
         <Route path="/" element={<Home />}  />
+        <Route path="/test" element={<TestApi />}  />
         <Route path="/ph" element={<PH funcNav={setShowNav} />}  />
+        
         
         <Route path="*" element={<div>Not Found</div>} />
       </Routes>
