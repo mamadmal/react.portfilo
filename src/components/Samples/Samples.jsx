@@ -32,14 +32,14 @@ export const Samples = ()=>{
             <h1>نمونه کارها:</h1>
         </div>
 
-        <div class="md:flex flex-wrap justify-center mx-3 md:mx-10 border border-slate-500 rounded-lg">
+        <div class="md:flex  flex-wrap justify-center mx-3 px-3 md:mx-10 border border-slate-500 rounded-lg">
 
                     {
                         sampleArrays.map((samp, index)=>{
                             return(
                                 <div class="md:w-[525px] mt-6 md:mx-6 cursor-pointer">
                                     <div  alt="" srcset="" class="rounded-lg border border-slate-500" ></div>
-                                        <div class="center-divMain text-2xl p-2 w-fit -m-4 hover:scale-125 ease-in duration-300" >
+                                        <div class="center-divMain text-2xl p-2 w-fit -m-4 md:hover:scale-125 ease-in duration-300" >
                                             
                                             <Link to={samp.link} key={index}>
                                                 <h1>{samp.name}</h1> 

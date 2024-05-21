@@ -18,7 +18,7 @@ function App() {
   return (
    
     <Router>
-
+<OnlineCheck />
 {   showNav &&
          <Nav /> 
    } 
